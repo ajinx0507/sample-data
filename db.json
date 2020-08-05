@@ -2,11 +2,11 @@
   "data": [
     {
       "id": { "name": "Ventilators", "item": "Intensive Care" },
-      "title": { "total": 30, "trackable": 8 },
-      "title": { "total": 22, "trackable": 8 },
-      "title": { "total": 16, "trackable": 1 },
+      "candidates": { "total": 30, "trackable": 8 },
+      "validated": { "total": 22, "trackable": 8 },
+      "inspected": { "total": 16, "trackable": 1 },
       "title": { "total": 15, "trackable": 1 },
-      "title": { "total": 14, "trackable": 4 },
+      "recertified": { "total": 14, "trackable": 4 },
       "title": { "total": 10, "trackable": 1 },
       "title": { "total": 9, "trackable": 9 }
     },
