@@ -1,35 +1,8 @@
 {
   "data": [
-    {
-      "categories": { "name": "Ventilators", "item": "Intensive Care" },
-      "candidates": { "total": 30, "trackable": 8 },
-      "validated": { "total": 22, "trackable": 8 },
-      "inspected": { "total": 16, "trackable": 1 },
-      "recertification-in-progress": { "total": 15, "trackable": 1 },
-      "recertified": { "total": 14, "trackable": 4 },
-      "in-transit": { "total": 10, "trackable": 1 },
-      "redeployed": { "total": 9, "trackable": 9 }
-    },
-    {
-      "categories": { "name": "Ventilators", "item": "Transport" },
-      "candidates": { "total": 30, "trackable": 8 },
-      "validated": { "total": 22, "trackable": 8 },
-      "inspected": { "total": 16, "trackable": 1 },
-      "recertification-in-progress": { "total": 15, "trackable": 1 },
-      "recertified": { "total": 14, "trackable": 4 },
-      "in-transit": { "total": 10, "trackable": 1 },
-      "redeployed": { "total": 9, "trackable": 9 }
-    },
-    {
-      "categories": { "name": "Beds", "item": "Electric" },
-      "candidates": { "total": 30, "trackable": 8 },
-      "validated": { "total": 22, "trackable": 8 },
-      "inspected": { "total": 16, "trackable": 1 },
-      "recertification-in-progress": { "total": 15, "trackable": 1 },
-      "recertified": { "total": 14, "trackable": 4 },
-      "in-transit": { "total": 10, "trackable": 1 },
-      "redeployed": { "total": 9, "trackable": 9 }
-    }
+    { "id": 1, "title": "Post 1" },
+    { "id": 2, "title": "Post 2" },
+    { "id": 3, "title": "Post 3" }
   ],
   "comments": [
     { "id": 1, "body": "some comment", "postId": 1 },
