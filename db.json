@@ -30,5 +30,12 @@
       "in-transit": { "total": 10, "trackable": 1 },
       "redeployed": { "total": 9, "trackable": 9 }
     }
-  ]
+  ],
+  "comments": [
+    { "id": 1, "body": "some comment", "postId": 1 },
+    { "id": 2, "body": "some comment", "postId": 1 }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
 }
