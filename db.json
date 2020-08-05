@@ -8,7 +8,7 @@
       "recertification-in-progress": { "total": 15, "trackable": 1 },
       "recertified": { "total": 14, "trackable": 4 },
       "in-transit": { "total": 10, "trackable": 1 },
-      "redeployed": { "total": 9, "trackable": 9 }, 
+      "redeployed": { "total": 9, "trackable": 9 }
     },
     {
       "categories": { "name": "Ventilators", "item": "Transport" },
@@ -18,7 +18,7 @@
       "recertification-in-progress": { "total": 15, "trackable": 1 },
       "recertified": { "total": 14, "trackable": 4 },
       "in-transit": { "total": 10, "trackable": 1 },
-      "redeployed": { "total": 9, "trackable": 9 }, 
+      "redeployed": { "total": 9, "trackable": 9 }
     },
     {
       "categories": { "name": "Beds", "item": "Electric" },
@@ -28,7 +28,7 @@
       "recertification-in-progress": { "total": 15, "trackable": 1 },
       "recertified": { "total": 14, "trackable": 4 },
       "in-transit": { "total": 10, "trackable": 1 },
-      "redeployed": { "total": 9, "trackable": 9 }, 
+      "redeployed": { "total": 9, "trackable": 9 }
     }
   ]
 }
