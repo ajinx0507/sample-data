@@ -29,6 +29,6 @@
       "recertified": { "total": 14, "trackable": 4 },
       "in-transit": { "total": 10, "trackable": 1 },
       "redeployed": { "total": 9, "trackable": 9 }, 
-    },
+    }
   ]
 }
