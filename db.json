@@ -1,36 +1,2851 @@
 {
-  "data": [
-    {
-      "categories": { "name": "Ventilators", "item": "Intensive Care" },
-      "candidates": { "total": 30, "trackable": 8 },
-      "validated": { "total": 22, "trackable": 8 },
-      "inspected": { "total": 16, "trackable": 1 },
-      "recertification-in-progress": { "total": 15, "trackable": 1 },
-      "recertified": { "total": 14, "trackable": 4 },
-      "in-transit": { "total": 10, "trackable": 1 },
-      "redeployed": { "total": 9, "trackable": 9 }
-    },
-    {
-      "categories": { "name": "Ventilators", "item": "Transport" },
-      "candidates": { "total": 30, "trackable": 8 },
-      "validated": { "total": 22, "trackable": 8 },
-      "inspected": { "total": 16, "trackable": 1 },
-      "recertification-in-progress": { "total": 15, "trackable": 1 },
-      "recertified": { "total": 14, "trackable": 4 },
-      "in-transit": { "total": 10, "trackable": 1 },
-      "redeployed": { "total": 9, "trackable": 9 }
-    },
-    {
-      "categories": { "name": "Beds", "item": "Electric" },
-      "candidates": { "total": 30, "trackable": 8 },
-      "validated": { "total": 22, "trackable": 8 },
-      "inspected": { "total": 16, "trackable": 1 },
-      "recertification-in-progress": { "total": 15, "trackable": 1 },
-      "recertified": { "total": 14, "trackable": 4 },
-      "in-transit": { "total": 10, "trackable": 1 },
-      "redeployed": { "total": 9, "trackable": 9 }
-    }
-  ],
+  "categories": [
+        {
+        "id": 82,
+        "name": "Anesthesia",
+        "fleet": 1,
+        "is_leaf": false,
+        "parent_ids": [
+            "0"
+        ],
+        "children": [
+            {
+            "id": 111,
+            "name": "Anesthesia Machines",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "82"
+            ],
+            "children": []
+            },
+            {
+            "id": 112,
+            "name": "Vaporizers",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "82"
+            ],
+            "children": []
+            },
+            {
+            "id": 113,
+            "name": "Anesthesia Accessories",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "82"
+            ],
+            "children": []
+            },
+            {
+            "id": 114,
+            "name": "Other Anesthesia",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "82"
+            ],
+            "children": []
+            },
+            {
+            "id": 115,
+            "name": "Anesthesia Chair",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "82",
+                "93"
+            ],
+            "children": []
+            },
+            {
+            "id": 116,
+            "name": "Anesthesia Stools",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "82"
+            ],
+            "children": []
+            },
+            {
+            "id": 117,
+            "name": "Anesthesia Monitors",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "82",
+                "95"
+            ],
+            "children": []
+            }
+        ]
+        },
+        {
+        "id": 83,
+        "name": "Beds",
+        "fleet": 1,
+        "is_leaf": false,
+        "parent_ids": [
+            "0"
+        ],
+        "children": [
+            {
+            "id": 118,
+            "name": "MedSurg Beds",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "83"
+            ],
+            "children": []
+            },
+            {
+            "id": 119,
+            "name": "Long Term Care Beds",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "83"
+            ],
+            "children": []
+            },
+            {
+            "id": 120,
+            "name": "ICU Beds",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "83"
+            ],
+            "children": []
+            },
+            {
+            "id": 121,
+            "name": "Behavioral Health Beds",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "83"
+            ],
+            "children": []
+            },
+            {
+            "id": 122,
+            "name": "Bed Parts & Accessories",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "83"
+            ],
+            "children": []
+            },
+            {
+            "id": 352,
+            "name": "Birthing Beds",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "83"
+            ],
+            "children": []
+            },
+            {
+            "id": 353,
+            "name": "Bariatric Beds",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "83"
+            ],
+            "children": []
+            }
+        ]
+        },
+        {
+        "id": 84,
+        "name": "Defibrillators",
+        "fleet": 1,
+        "is_leaf": false,
+        "parent_ids": [
+            "0"
+        ],
+        "children": [
+            {
+            "id": 123,
+            "name": "AED",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "84"
+            ],
+            "children": []
+            },
+            {
+            "id": 124,
+            "name": "Crash Cart Defibrillators",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "84"
+            ],
+            "children": []
+            },
+            {
+            "id": 125,
+            "name": "First Responder Defibrillators",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "84"
+            ],
+            "children": []
+            },
+            {
+            "id": 126,
+            "name": "Defibrillator Accessories",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "84"
+            ],
+            "children": []
+            },
+            {
+            "id": 127,
+            "name": "Other Defibrillators",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "84"
+            ],
+            "children": []
+            }
+        ]
+        },
+        {
+        "id": 85,
+        "name": "Dental",
+        "fleet": 0,
+        "is_leaf": false,
+        "parent_ids": [
+            "0"
+        ],
+        "children": [
+            {
+            "id": 128,
+            "name": "Dental Accessories",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "85"
+            ],
+            "children": []
+            },
+            {
+            "id": 129,
+            "name": "Dental Microscopes",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "108",
+                "85"
+            ],
+            "children": []
+            },
+            {
+            "id": 130,
+            "name": "Dental Stools",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "85"
+            ],
+            "children": []
+            },
+            {
+            "id": 131,
+            "name": "Dental Surgical Instruments",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "85"
+            ],
+            "children": []
+            },
+            {
+            "id": 132,
+            "name": "Headlights",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "85",
+                "92"
+            ],
+            "children": []
+            }
+        ]
+        },
+        {
+        "id": 86,
+        "name": "Diagnostic",
+        "fleet": 0,
+        "is_leaf": false,
+        "parent_ids": [
+            "0"
+        ],
+        "children": [
+            {
+            "id": 133,
+            "name": "Audiometers",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "86"
+            ],
+            "children": []
+            },
+            {
+            "id": 134,
+            "name": "Doppler Systems",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "86"
+            ],
+            "children": []
+            },
+            {
+            "id": 135,
+            "name": "Diagnostic Sets",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "100",
+                "86"
+            ],
+            "children": []
+            },
+            {
+            "id": 136,
+            "name": "Ultrasounds",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "86",
+                "90"
+            ],
+            "children": []
+            },
+            {
+            "id": 137,
+            "name": "Bladder Scanners",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "86"
+            ],
+            "children": []
+            },
+            {
+            "id": 138,
+            "name": "Colposcopes",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "86"
+            ],
+            "children": []
+            },
+            {
+            "id": 139,
+            "name": "Pulse Oximeters",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "86"
+            ],
+            "children": []
+            },
+            {
+            "id": 140,
+            "name": "Diagnostic ECG/EKG",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "86"
+            ],
+            "children": []
+            },
+            {
+            "id": 141,
+            "name": "Diagnostic Ultrasounds",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "86"
+            ],
+            "children": []
+            }
+        ]
+        },
+        {
+        "id": 87,
+        "name": "ECG/EKG",
+        "fleet": 0,
+        "is_leaf": false,
+        "parent_ids": [
+            "0"
+        ],
+        "children": [
+            {
+            "id": 142,
+            "name": "ECG/EKG Resting Machines",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "87"
+            ],
+            "children": []
+            },
+            {
+            "id": 143,
+            "name": "ECG/EKG Machines",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "87"
+            ],
+            "children": []
+            },
+            {
+            "id": 144,
+            "name": "EKG/ECG Accessories",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "87"
+            ],
+            "children": []
+            }
+        ]
+        },
+        {
+        "id": 88,
+        "name": "Electrosurgical",
+        "fleet": 1,
+        "is_leaf": false,
+        "parent_ids": [
+            "0"
+        ],
+        "children": [
+            {
+            "id": 145,
+            "name": "Electrosurgical Systems",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "107",
+                "88"
+            ],
+            "children": []
+            },
+            {
+            "id": 146,
+            "name": "Electrosurgical Accessories",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "88"
+            ],
+            "children": []
+            },
+            {
+            "id": 147,
+            "name": "Cauteries",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "88"
+            ],
+            "children": []
+            }
+        ]
+        },
+        {
+        "id": 89,
+        "name": "Endoscopy",
+        "fleet": 0,
+        "is_leaf": false,
+        "parent_ids": [
+            "0"
+        ],
+        "children": [
+            {
+            "id": 148,
+            "name": "Bronchoscopes",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "89"
+            ],
+            "children": []
+            },
+            {
+            "id": 149,
+            "name": "Insufflators",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "89"
+            ],
+            "children": []
+            },
+            {
+            "id": 150,
+            "name": "Arthroscopy",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "89"
+            ],
+            "children": []
+            },
+            {
+            "id": 151,
+            "name": "Laparoscopy",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "89"
+            ],
+            "children": []
+            },
+            {
+            "id": 152,
+            "name": "Urology",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "89"
+            ],
+            "children": []
+            },
+            {
+            "id": 153,
+            "name": "Sinus",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "89"
+            ],
+            "children": []
+            },
+            {
+            "id": 154,
+            "name": "Endo Monitors",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "89"
+            ],
+            "children": []
+            },
+            {
+            "id": 155,
+            "name": "Flexible Storage Cabinets - Endo",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "89"
+            ],
+            "children": []
+            },
+            {
+            "id": 156,
+            "name": "Light Sources",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "89"
+            ],
+            "children": []
+            },
+            {
+            "id": 157,
+            "name": "Enzymatic Cleaners/Sponges",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "89"
+            ],
+            "children": []
+            },
+            {
+            "id": 158,
+            "name": "Endoscopic Video Camera Systems",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "89"
+            ],
+            "children": []
+            },
+            {
+            "id": 159,
+            "name": "Fiber Optic Cables",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "89"
+            ],
+            "children": []
+            },
+            {
+            "id": 160,
+            "name": "Leak Testers",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "89"
+            ],
+            "children": []
+            },
+            {
+            "id": 161,
+            "name": "Intubation Scopes",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "89"
+            ],
+            "children": []
+            },
+            {
+            "id": 162,
+            "name": "Camera Heads and Couplers",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "89"
+            ],
+            "children": []
+            },
+            {
+            "id": 163,
+            "name": "Arthroscopes",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "89"
+            ],
+            "children": []
+            },
+            {
+            "id": 164,
+            "name": "Flexible Scopes",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "89"
+            ],
+            "children": []
+            }
+        ]
+        },
+        {
+        "id": 90,
+        "name": "Imaging",
+        "fleet": 1,
+        "is_leaf": false,
+        "parent_ids": [
+            "0"
+        ],
+        "children": [
+            {
+            "id": 136,
+            "name": "Ultrasounds",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "86",
+                "90"
+            ],
+            "children": []
+            },
+            {
+            "id": 166,
+            "name": "X-Ray",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "90"
+            ],
+            "children": []
+            },
+            {
+            "id": 167,
+            "name": "Mammography",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "90"
+            ],
+            "children": []
+            },
+            {
+            "id": 168,
+            "name": "Bone Densitometry",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "90"
+            ],
+            "children": []
+            },
+            {
+            "id": 169,
+            "name": "MRI",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "90"
+            ],
+            "children": []
+            },
+            {
+            "id": 170,
+            "name": "CT",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "90"
+            ],
+            "children": []
+            },
+            {
+            "id": 171,
+            "name": "C-arms",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "90"
+            ],
+            "children": []
+            },
+            {
+            "id": 172,
+            "name": "Interventional Radiology/R&F",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "90"
+            ],
+            "children": []
+            },
+            {
+            "id": 174,
+            "name": "Portable X Rays",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "90"
+            ],
+            "children": []
+            },
+            {
+            "id": 175,
+            "name": "Injectors",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "90"
+            ],
+            "children": []
+            },
+            {
+            "id": 176,
+            "name": "Other Imaging",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "90"
+            ],
+            "children": []
+            },
+            {
+            "id": 177,
+            "name": "CR Readers",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "90"
+            ],
+            "children": []
+            }
+        ]
+        },
+        {
+        "id": 91,
+        "name": "Lab",
+        "fleet": 0,
+        "is_leaf": false,
+        "parent_ids": [
+            "0"
+        ],
+        "children": [
+            {
+            "id": 178,
+            "name": "Centrifuges",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "91"
+            ],
+            "children": []
+            },
+            {
+            "id": 179,
+            "name": "Hoods",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "91"
+            ],
+            "children": []
+            },
+            {
+            "id": 180,
+            "name": "Freezers/Refrigerators",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "91"
+            ],
+            "children": []
+            },
+            {
+            "id": 181,
+            "name": "Lab Accessories",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "91"
+            ],
+            "children": []
+            },
+            {
+            "id": 182,
+            "name": "Other Lab",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "91"
+            ],
+            "children": []
+            },
+            {
+            "id": 183,
+            "name": "Lab Microscopes",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "91"
+            ],
+            "children": []
+            },
+            {
+            "id": 184,
+            "name": "Lab Incubators",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "91"
+            ],
+            "children": []
+            }
+        ]
+        },
+        {
+        "id": 92,
+        "name": "Lighting",
+        "fleet": 0,
+        "is_leaf": false,
+        "parent_ids": [
+            "0"
+        ],
+        "children": [
+            {
+            "id": 132,
+            "name": "Headlights",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "85",
+                "92"
+            ],
+            "children": []
+            },
+            {
+            "id": 186,
+            "name": "Surgery Lights",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "107",
+                "92"
+            ],
+            "children": []
+            },
+            {
+            "id": 187,
+            "name": "Exam Lights",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "92"
+            ],
+            "children": []
+            },
+            {
+            "id": 188,
+            "name": "Intubation Lights",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "92"
+            ],
+            "children": []
+            },
+            {
+            "id": 189,
+            "name": "Ophthalmic Lights",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "92"
+            ],
+            "children": []
+            },
+            {
+            "id": 190,
+            "name": "Endoscopic Light Sources",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "92"
+            ],
+            "children": []
+            },
+            {
+            "id": 191,
+            "name": "Other Lighting",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "92"
+            ],
+            "children": []
+            },
+            {
+            "id": 192,
+            "name": "Lighting Accessories",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "92"
+            ],
+            "children": []
+            }
+        ]
+        },
+        {
+        "id": 93,
+        "name": "Medical Furniture",
+        "fleet": 0,
+        "is_leaf": false,
+        "parent_ids": [
+            "0"
+        ],
+        "children": [
+            {
+            "id": 105,
+            "name": "Stretchers",
+            "fleet": 1,
+            "is_leaf": false,
+            "parent_ids": [
+                "0",
+                "93"
+            ],
+            "children": [
+                {
+                "id": 315,
+                "name": "Surgery Stretchers",
+                "fleet": 1,
+                "is_leaf": true,
+                "parent_ids": [
+                    "105"
+                ],
+                "children": []
+                },
+                {
+                "id": 316,
+                "name": "Transport Stretchers",
+                "fleet": 1,
+                "is_leaf": true,
+                "parent_ids": [
+                    "105"
+                ],
+                "children": []
+                },
+                {
+                "id": 317,
+                "name": "Ambulance Stretchers",
+                "fleet": 1,
+                "is_leaf": true,
+                "parent_ids": [
+                    "105"
+                ],
+                "children": []
+                },
+                {
+                "id": 318,
+                "name": "Eye Surgery Stretchers",
+                "fleet": 1,
+                "is_leaf": true,
+                "parent_ids": [
+                    "105"
+                ],
+                "children": []
+                },
+                {
+                "id": 319,
+                "name": "Fluoroscopy Stretchers",
+                "fleet": 1,
+                "is_leaf": true,
+                "parent_ids": [
+                    "105"
+                ],
+                "children": []
+                },
+                {
+                "id": 320,
+                "name": "Pediatric Crib Stretchers",
+                "fleet": 1,
+                "is_leaf": true,
+                "parent_ids": [
+                    "105"
+                ],
+                "children": []
+                },
+                {
+                "id": 321,
+                "name": "Stretcher Pads",
+                "fleet": 1,
+                "is_leaf": true,
+                "parent_ids": [
+                    "105"
+                ],
+                "children": []
+                },
+                {
+                "id": 354,
+                "name": "Electric Stretchers",
+                "fleet": 1,
+                "is_leaf": true,
+                "parent_ids": [
+                    "105"
+                ],
+                "children": []
+                }
+            ]
+            },
+            {
+            "id": 115,
+            "name": "Anesthesia Chair",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "82",
+                "93"
+            ],
+            "children": []
+            },
+            {
+            "id": 193,
+            "name": "Exam Tables",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "100",
+                "93"
+            ],
+            "children": []
+            },
+            {
+            "id": 194,
+            "name": "Cabinets",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "93"
+            ],
+            "children": []
+            },
+            {
+            "id": 195,
+            "name": "Blood Drawing Chairs",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "93"
+            ],
+            "children": []
+            },
+            {
+            "id": 196,
+            "name": "Dispensers and Holders",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "93"
+            ],
+            "children": []
+            },
+            {
+            "id": 198,
+            "name": "Furniture Parts & Accessories",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "93"
+            ],
+            "children": []
+            },
+            {
+            "id": 199,
+            "name": "Exam Chairs",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "93"
+            ],
+            "children": []
+            },
+            {
+            "id": 200,
+            "name": "Phlebotomy Carts",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "93"
+            ],
+            "children": []
+            },
+            {
+            "id": 201,
+            "name": "Storage",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "93"
+            ],
+            "children": []
+            },
+            {
+            "id": 202,
+            "name": "Medical Tables",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "93"
+            ],
+            "children": []
+            },
+            {
+            "id": 203,
+            "name": "Waste Removal",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "93"
+            ],
+            "children": []
+            },
+            {
+            "id": 205,
+            "name": "Stools",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "93"
+            ],
+            "children": []
+            },
+            {
+            "id": 206,
+            "name": "Scales",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "93",
+                "99"
+            ],
+            "children": []
+            },
+            {
+            "id": 207,
+            "name": "Bedside tables",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "93"
+            ],
+            "children": []
+            },
+            {
+            "id": 208,
+            "name": "ENT Cabinets",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "93"
+            ],
+            "children": []
+            },
+            {
+            "id": 209,
+            "name": "ENT Exam Chairs",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "93"
+            ],
+            "children": []
+            },
+            {
+            "id": 210,
+            "name": "Hospital Beds",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "93"
+            ],
+            "children": []
+            },
+            {
+            "id": 211,
+            "name": "Medical Carts",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "93"
+            ],
+            "children": []
+            },
+            {
+            "id": 212,
+            "name": "Oral Surgery Chairs",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "93"
+            ],
+            "children": []
+            },
+            {
+            "id": 213,
+            "name": "IV Poles",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "103",
+                "93"
+            ],
+            "children": []
+            },
+            {
+            "id": 214,
+            "name": "Overbed tables",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "93"
+            ],
+            "children": []
+            },
+            {
+            "id": 215,
+            "name": "Recliners",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "93"
+            ],
+            "children": []
+            }
+        ]
+        },
+        {
+        "id": 94,
+        "name": "Miscellaneous",
+        "fleet": 0,
+        "is_leaf": false,
+        "parent_ids": [
+            "0"
+        ],
+        "children": [
+            {
+            "id": 217,
+            "name": "Office Furniture",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "94"
+            ],
+            "children": []
+            },
+            {
+            "id": 218,
+            "name": "Doppler Systems",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "94"
+            ],
+            "children": []
+            },
+            {
+            "id": 219,
+            "name": "Fat Grafting Systems",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "94"
+            ],
+            "children": []
+            },
+            {
+            "id": 220,
+            "name": "Surgical Booms",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "94"
+            ],
+            "children": []
+            },
+            {
+            "id": 221,
+            "name": "Dermatoscopes",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "94"
+            ],
+            "children": []
+            },
+            {
+            "id": 222,
+            "name": "Medical Clothing",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "94"
+            ],
+            "children": []
+            },
+            {
+            "id": 223,
+            "name": "Cryosurgical",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "94"
+            ],
+            "children": []
+            }
+        ]
+        },
+        {
+        "id": 95,
+        "name": "Monitors",
+        "fleet": 1,
+        "is_leaf": false,
+        "parent_ids": [
+            "0"
+        ],
+        "children": [
+            {
+            "id": 117,
+            "name": "Anesthesia Monitors",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "82",
+                "95"
+            ],
+            "children": []
+            },
+            {
+            "id": 224,
+            "name": "NIBP Monitors",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "95"
+            ],
+            "children": []
+            },
+            {
+            "id": 225,
+            "name": "Holter Monitors",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "95"
+            ],
+            "children": []
+            },
+            {
+            "id": 226,
+            "name": "Agent Monitors",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "95"
+            ],
+            "children": []
+            },
+            {
+            "id": 227,
+            "name": "Blood Pressure Monitors",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "95"
+            ],
+            "children": []
+            },
+            {
+            "id": 228,
+            "name": "Fetal Monitors",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "95"
+            ],
+            "children": []
+            },
+            {
+            "id": 229,
+            "name": "CO2 monitors",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "95"
+            ],
+            "children": []
+            },
+            {
+            "id": 230,
+            "name": "Patient Monitors",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "95"
+            ],
+            "children": []
+            },
+            {
+            "id": 231,
+            "name": "Vital Signs Monitors",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "95"
+            ],
+            "children": []
+            },
+            {
+            "id": 232,
+            "name": "Capnometers",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "95"
+            ],
+            "children": []
+            },
+            {
+            "id": 233,
+            "name": "EEG and PSG Systems",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "95"
+            ],
+            "children": []
+            },
+            {
+            "id": 234,
+            "name": "IOM Systems",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "95"
+            ],
+            "children": []
+            },
+            {
+            "id": 235,
+            "name": "Neonatal Monitors",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "95",
+                "96"
+            ],
+            "children": []
+            },
+            {
+            "id": 236,
+            "name": "Monitor Accessories",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "95"
+            ],
+            "children": []
+            },
+            {
+            "id": 237,
+            "name": "Surgical Monitors",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "95"
+            ],
+            "children": []
+            }
+        ]
+        },
+        {
+        "id": 96,
+        "name": "Neonatal/NICU",
+        "fleet": 0,
+        "is_leaf": false,
+        "parent_ids": [
+            "0"
+        ],
+        "children": [
+            {
+            "id": 235,
+            "name": "Neonatal Monitors",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "95",
+                "96"
+            ],
+            "children": []
+            },
+            {
+            "id": 239,
+            "name": "Infant Incubators",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "96"
+            ],
+            "children": []
+            },
+            {
+            "id": 240,
+            "name": "Bili Lights",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "96"
+            ],
+            "children": []
+            },
+            {
+            "id": 241,
+            "name": "Crib",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "96"
+            ],
+            "children": []
+            },
+            {
+            "id": 242,
+            "name": "Infant Warmers",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "109",
+                "96"
+            ],
+            "children": []
+            },
+            {
+            "id": 244,
+            "name": "Neonatal Accessories",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "96"
+            ],
+            "children": []
+            },
+            {
+            "id": 245,
+            "name": "Other Neonatal",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "96"
+            ],
+            "children": []
+            },
+            {
+            "id": 247,
+            "name": "Fetal Monitors",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "96"
+            ],
+            "children": []
+            }
+        ]
+        },
+        {
+        "id": 97,
+        "name": "OR Tables",
+        "fleet": 1,
+        "is_leaf": false,
+        "parent_ids": [
+            "0"
+        ],
+        "children": [
+            {
+            "id": 248,
+            "name": "Table Pads",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "97",
+                "98"
+            ],
+            "children": []
+            },
+            {
+            "id": 249,
+            "name": "OR table accessories",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "97"
+            ],
+            "children": []
+            },
+            {
+            "id": 250,
+            "name": "All OR Tables",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "97"
+            ],
+            "children": []
+            }
+        ]
+        },
+        {
+        "id": 351,
+        "name": "Other",
+        "fleet": 0,
+        "is_leaf": true,
+        "parent_ids": [
+            "0"
+        ],
+        "children": []
+        },
+        {
+        "id": 98,
+        "name": "Pain and Imaging Tables",
+        "fleet": 0,
+        "is_leaf": false,
+        "parent_ids": [
+            "0"
+        ],
+        "children": [
+            {
+            "id": 248,
+            "name": "Table Pads",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "97",
+                "98"
+            ],
+            "children": []
+            },
+            {
+            "id": 252,
+            "name": "Pain and Imaging table accessories",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "98"
+            ],
+            "children": []
+            },
+            {
+            "id": 253,
+            "name": "All Pain and Imaging Tables",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "98"
+            ],
+            "children": []
+            }
+        ]
+        },
+        {
+        "id": 99,
+        "name": "Physical Therapy and Rehab",
+        "fleet": 0,
+        "is_leaf": false,
+        "parent_ids": [
+            "0"
+        ],
+        "children": [
+            {
+            "id": 206,
+            "name": "Scales",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "93",
+                "99"
+            ],
+            "children": []
+            },
+            {
+            "id": 254,
+            "name": "Therapeutic Ultrasounds",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "99"
+            ],
+            "children": []
+            },
+            {
+            "id": 255,
+            "name": "TENS Stimulators",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "99"
+            ],
+            "children": []
+            },
+            {
+            "id": 256,
+            "name": "Electrical Muscle Stimulators",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "99"
+            ],
+            "children": []
+            },
+            {
+            "id": 257,
+            "name": "Exercise Equipment",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "99"
+            ],
+            "children": []
+            },
+            {
+            "id": 258,
+            "name": "Rehab Therapy Tables",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "99"
+            ],
+            "children": []
+            },
+            {
+            "id": 259,
+            "name": "Balance Assessment Systems",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "99"
+            ],
+            "children": []
+            },
+            {
+            "id": 261,
+            "name": "Other Physical Therapy",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "99"
+            ],
+            "children": []
+            }
+        ]
+        },
+        {
+        "id": 100,
+        "name": "Procedure & Exam Room",
+        "fleet": 0,
+        "is_leaf": false,
+        "parent_ids": [
+            "0"
+        ],
+        "children": [
+            {
+            "id": 135,
+            "name": "Diagnostic Sets",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "100",
+                "86"
+            ],
+            "children": []
+            },
+            {
+            "id": 193,
+            "name": "Exam Tables",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "100",
+                "93"
+            ],
+            "children": []
+            },
+            {
+            "id": 263,
+            "name": "Procedure Chairs and Tables",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "100"
+            ],
+            "children": []
+            },
+            {
+            "id": 265,
+            "name": "Other Procedure/ Exam room",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "100"
+            ],
+            "children": []
+            }
+        ]
+        },
+        {
+        "id": 101,
+        "name": "Pumps",
+        "fleet": 1,
+        "is_leaf": false,
+        "parent_ids": [
+            "0"
+        ],
+        "children": [
+            {
+            "id": 266,
+            "name": "Infusion Pumps",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "101"
+            ],
+            "children": []
+            },
+            {
+            "id": 267,
+            "name": "Ambulatory Pumps",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "101"
+            ],
+            "children": []
+            },
+            {
+            "id": 268,
+            "name": "Enteral Pumps",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "101"
+            ],
+            "children": []
+            },
+            {
+            "id": 269,
+            "name": "Suction Pumps",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "101"
+            ],
+            "children": []
+            },
+            {
+            "id": 270,
+            "name": "Syringe Pumps",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "101"
+            ],
+            "children": []
+            },
+            {
+            "id": 271,
+            "name": "Vascular Therapy Pumps ",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "101"
+            ],
+            "children": []
+            },
+            {
+            "id": 272,
+            "name": "Aspirators",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "101",
+                "107"
+            ],
+            "children": []
+            },
+            {
+            "id": 273,
+            "name": "Other Pumps",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "101"
+            ],
+            "children": []
+            },
+            {
+            "id": 274,
+            "name": "Vacuum Regulators",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "101"
+            ],
+            "children": []
+            },
+            {
+            "id": 275,
+            "name": "Pump Accessories and Stands",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "101"
+            ],
+            "children": []
+            },
+            {
+            "id": 276,
+            "name": "Irrigation Pumps",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "101"
+            ],
+            "children": []
+            }
+        ]
+        },
+        {
+        "id": 102,
+        "name": "Respiratory",
+        "fleet": 0,
+        "is_leaf": false,
+        "parent_ids": [
+            "0"
+        ],
+        "children": [
+            {
+            "id": 277,
+            "name": "Pulse Oximetry",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "102"
+            ],
+            "children": []
+            },
+            {
+            "id": 278,
+            "name": "Ventilators",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "102"
+            ],
+            "children": []
+            },
+            {
+            "id": 279,
+            "name": "Respiratory Analyzer",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "102"
+            ],
+            "children": []
+            },
+            {
+            "id": 280,
+            "name": "Spirometers",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "102"
+            ],
+            "children": []
+            },
+            {
+            "id": 281,
+            "name": "CPAP Mask",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "102"
+            ],
+            "children": []
+            },
+            {
+            "id": 282,
+            "name": "Humidifier / Heater",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "102"
+            ],
+            "children": []
+            },
+            {
+            "id": 283,
+            "name": "Oxygen Concentrator",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "102"
+            ],
+            "children": []
+            },
+            {
+            "id": 284,
+            "name": "Respirators",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "102"
+            ],
+            "children": []
+            },
+            {
+            "id": 285,
+            "name": "CPAP",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "102"
+            ],
+            "children": []
+            },
+            {
+            "id": 286,
+            "name": "Other Respiratory",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "102"
+            ],
+            "children": []
+            },
+            {
+            "id": 287,
+            "name": "Flow Meter",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "102"
+            ],
+            "children": []
+            }
+        ]
+        },
+        {
+        "id": 103,
+        "name": "Stainless Steel",
+        "fleet": 0,
+        "is_leaf": false,
+        "parent_ids": [
+            "0"
+        ],
+        "children": [
+            {
+            "id": 213,
+            "name": "IV Poles",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "103",
+                "93"
+            ],
+            "children": []
+            },
+            {
+            "id": 288,
+            "name": "Scrub Sinks",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "103"
+            ],
+            "children": []
+            },
+            {
+            "id": 289,
+            "name": "Warming Cabinets",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "103"
+            ],
+            "children": []
+            },
+            {
+            "id": 290,
+            "name": "Prep & Pack Workstations",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "103"
+            ],
+            "children": []
+            },
+            {
+            "id": 291,
+            "name": "Processing Sinks",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "103"
+            ],
+            "children": []
+            },
+            {
+            "id": 292,
+            "name": "Casework",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "103"
+            ],
+            "children": []
+            },
+            {
+            "id": 293,
+            "name": "Stainless Steel Tables",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "103"
+            ],
+            "children": []
+            },
+            {
+            "id": 294,
+            "name": "Stainless Steel Carts",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "103"
+            ],
+            "children": []
+            },
+            {
+            "id": 296,
+            "name": "Mayo Stands",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "103"
+            ],
+            "children": []
+            },
+            {
+            "id": 297,
+            "name": "Solution Stands",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "103"
+            ],
+            "children": []
+            },
+            {
+            "id": 298,
+            "name": "Linen Hampers",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "103"
+            ],
+            "children": []
+            },
+            {
+            "id": 299,
+            "name": "Other Stainless Steel, Casters, and Accessories",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "103"
+            ],
+            "children": []
+            },
+            {
+            "id": 300,
+            "name": "Step Stools",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "103"
+            ],
+            "children": []
+            },
+            {
+            "id": 301,
+            "name": "Scope Cabinets",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "103"
+            ],
+            "children": []
+            },
+            {
+            "id": 302,
+            "name": "Pass Through Windows",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "103"
+            ],
+            "children": []
+            },
+            {
+            "id": 303,
+            "name": "Peg Boards",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "103"
+            ],
+            "children": []
+            },
+            {
+            "id": 304,
+            "name": "MR Conditional Products",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "103"
+            ],
+            "children": []
+            },
+            {
+            "id": 305,
+            "name": "Crash Carts",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "103"
+            ],
+            "children": []
+            },
+            {
+            "id": 306,
+            "name": "Shelving",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "103"
+            ],
+            "children": []
+            },
+            {
+            "id": 307,
+            "name": "Kick Buckets",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "103"
+            ],
+            "children": []
+            },
+            {
+            "id": 308,
+            "name": "Bassinets",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "103"
+            ],
+            "children": []
+            }
+        ]
+        },
+        {
+        "id": 104,
+        "name": "Sterilization",
+        "fleet": 0,
+        "is_leaf": false,
+        "parent_ids": [
+            "0"
+        ],
+        "children": [
+            {
+            "id": 309,
+            "name": "Autoclaves/Sterilizers",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "104"
+            ],
+            "children": []
+            },
+            {
+            "id": 310,
+            "name": "Ultrasonic Cleaner",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "104"
+            ],
+            "children": []
+            },
+            {
+            "id": 311,
+            "name": "Scope Reprocessor",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "104"
+            ],
+            "children": []
+            },
+            {
+            "id": 312,
+            "name": "Washer Disinfector",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "104"
+            ],
+            "children": []
+            },
+            {
+            "id": 313,
+            "name": "Central Sterile Packing Table",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "104"
+            ],
+            "children": []
+            },
+            {
+            "id": 314,
+            "name": "Other Sterilization",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "104"
+            ],
+            "children": []
+            }
+        ]
+        },
+        {
+        "id": 105,
+        "name": "Stretchers",
+        "fleet": 1,
+        "is_leaf": false,
+        "parent_ids": [
+            "0",
+            "93"
+        ],
+        "children": [
+            {
+            "id": 315,
+            "name": "Surgery Stretchers",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "105"
+            ],
+            "children": []
+            },
+            {
+            "id": 316,
+            "name": "Transport Stretchers",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "105"
+            ],
+            "children": []
+            },
+            {
+            "id": 317,
+            "name": "Ambulance Stretchers",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "105"
+            ],
+            "children": []
+            },
+            {
+            "id": 318,
+            "name": "Eye Surgery Stretchers",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "105"
+            ],
+            "children": []
+            },
+            {
+            "id": 319,
+            "name": "Fluoroscopy Stretchers",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "105"
+            ],
+            "children": []
+            },
+            {
+            "id": 320,
+            "name": "Pediatric Crib Stretchers",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "105"
+            ],
+            "children": []
+            },
+            {
+            "id": 321,
+            "name": "Stretcher Pads",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "105"
+            ],
+            "children": []
+            },
+            {
+            "id": 354,
+            "name": "Electric Stretchers",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "105"
+            ],
+            "children": []
+            }
+        ]
+        },
+        {
+        "id": 106,
+        "name": "Supplies",
+        "fleet": 0,
+        "is_leaf": false,
+        "parent_ids": [
+            "0"
+        ],
+        "children": [
+            {
+            "id": 322,
+            "name": "Consumables",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "106"
+            ],
+            "children": []
+            },
+            {
+            "id": 323,
+            "name": "Screws, Plates, Nails, and Attachments",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "106",
+                "107"
+            ],
+            "children": []
+            },
+            {
+            "id": 324,
+            "name": "Sutures",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "106",
+                "107"
+            ],
+            "children": []
+            },
+            {
+            "id": 325,
+            "name": "Other Supplies",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "106"
+            ],
+            "children": []
+            },
+            {
+            "id": 326,
+            "name": "EMG EP Systems and Supplies",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "106"
+            ],
+            "children": []
+            }
+        ]
+        },
+        {
+        "id": 107,
+        "name": "Surgery",
+        "fleet": 0,
+        "is_leaf": false,
+        "parent_ids": [
+            "0"
+        ],
+        "children": [
+            {
+            "id": 145,
+            "name": "Electrosurgical Systems",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "107",
+                "88"
+            ],
+            "children": []
+            },
+            {
+            "id": 186,
+            "name": "Surgery Lights",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "107",
+                "92"
+            ],
+            "children": []
+            },
+            {
+            "id": 272,
+            "name": "Aspirators",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "101",
+                "107"
+            ],
+            "children": []
+            },
+            {
+            "id": 323,
+            "name": "Screws, Plates, Nails, and Attachments",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "106",
+                "107"
+            ],
+            "children": []
+            },
+            {
+            "id": 324,
+            "name": "Sutures",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "106",
+                "107"
+            ],
+            "children": []
+            },
+            {
+            "id": 327,
+            "name": "Heart Lung Bypass Machines",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "107"
+            ],
+            "children": []
+            },
+            {
+            "id": 328,
+            "name": "Heater/Cooler Machines",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "107"
+            ],
+            "children": []
+            },
+            {
+            "id": 329,
+            "name": "Surgical Instruments",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "107"
+            ],
+            "children": []
+            },
+            {
+            "id": 330,
+            "name": "Smoke Evacuation",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "107"
+            ],
+            "children": []
+            },
+            {
+            "id": 331,
+            "name": "Tourniquet Systems",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "107"
+            ],
+            "children": []
+            },
+            {
+            "id": 332,
+            "name": "Other Surgery",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "107"
+            ],
+            "children": []
+            },
+            {
+            "id": 334,
+            "name": "Diathermy Machines",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "107"
+            ],
+            "children": []
+            },
+            {
+            "id": 335,
+            "name": "Power Equipment",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "107"
+            ],
+            "children": []
+            }
+        ]
+        },
+        {
+        "id": 108,
+        "name": "Surgical Microscopes",
+        "fleet": 1,
+        "is_leaf": false,
+        "parent_ids": [
+            "0"
+        ],
+        "children": [
+            {
+            "id": 129,
+            "name": "Dental Microscopes",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "108",
+                "85"
+            ],
+            "children": []
+            },
+            {
+            "id": 341,
+            "name": "Ophthalmology Microscopes",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "108"
+            ],
+            "children": []
+            },
+            {
+            "id": 342,
+            "name": "Hand and Plastic Scopes",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "108"
+            ],
+            "children": []
+            },
+            {
+            "id": 343,
+            "name": "ENT Microscopes",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "108"
+            ],
+            "children": []
+            },
+            {
+            "id": 344,
+            "name": "Wet Lab/Bone Lab",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "108"
+            ],
+            "children": []
+            },
+            {
+            "id": 346,
+            "name": "Neuro Spine Scopes",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "108"
+            ],
+            "children": []
+            },
+            {
+            "id": 347,
+            "name": "Other Surgical Microscopes",
+            "fleet": 1,
+            "is_leaf": true,
+            "parent_ids": [
+                "108"
+            ],
+            "children": []
+            }
+        ]
+        },
+        {
+        "id": 109,
+        "name": "Warmers/Coolers",
+        "fleet": 0,
+        "is_leaf": false,
+        "parent_ids": [
+            "0"
+        ],
+        "children": [
+            {
+            "id": 242,
+            "name": "Infant Warmers",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "109",
+                "96"
+            ],
+            "children": []
+            },
+            {
+            "id": 348,
+            "name": "Blanket Warmers",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "109"
+            ],
+            "children": []
+            },
+            {
+            "id": 349,
+            "name": "Patient Warmers",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "109"
+            ],
+            "children": []
+            },
+            {
+            "id": 350,
+            "name": "Fluid Warmers",
+            "fleet": 0,
+            "is_leaf": true,
+            "parent_ids": [
+                "109"
+            ],
+            "children": []
+            }
+        ]
+        },
+        {
+        "id": 110,
+        "name": "Water Purification",
+        "fleet": 0,
+        "is_leaf": true,
+        "parent_ids": [
+            "0"
+        ],
+        "children": []
+          }
+],
   "comments": [
     { "id": 1, "body": "some comment", "postId": 1 },
     { "id": 2, "body": "some comment", "postId": 1 }
